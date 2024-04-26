@@ -1,0 +1,147 @@
+<DOCTYPE html>
+<html>
+<head>
+    <title>learning websites</title>
+     <style>
+      body{
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    font-family: sans-serif;
+}
+.loginbox{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 500px;
+    height: 550px;
+    padding: 80px 40px;
+    box-sizing: border-box;
+    background:rgba(0,0,0,.3) ;
+    border-radius: 30px;
+
+}
+.user{
+    width: 23%;
+    height: 20%;
+    border-radius: 46%;
+    overflow: hidden;
+    position: absolute;
+   top: calc(-40px);
+   left: calc(125px);
+   
+}
+h2{
+    margin: 0;
+    padding: 0 0 20px;
+    color: #efed40;
+    text-align: center;
+
+}
+.loginbox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    color: #fff;
+}
+.loginbox input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.loginbox input[type="text"],
+.loginbox input[type="password"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+::placeholder
+{
+    color: rgba(255.255,255,.5);
+}
+.loginbox input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+    background: #ff267e;
+    border-radius: 20px;
+    cursor: pointer;
+    
+}
+
+.loginbox input[type="submit"]:hover{
+    background: #efed40;
+    color: #262626;
+}
+.loginbox a{
+ color: #fff;
+ font-size: 14px;
+ font-weight: bold;
+ text-decoration: none;
+
+
+}
+.select {
+  width: 420px;
+  height: 35px;
+  background: #ff267e;
+  border-radius: 20px;
+  padding: 5px;
+  margin: 5px;
+font-size: 15px;
+color: #fff;
+border: 2px solid gray;
+}
+.date {
+  width: 120px;
+  height: 30px;
+  background: #ff267e;
+  border-radius: 20px;
+  font-size: 15px;
+  border:  2px solid gray;
+  color: #fff;
+}
+.number{
+  width: 120px;
+  height: 30px;
+  border-radius: 25px;
+  border: 2px solid gray;
+  background: #ff267e;
+}
+     </style>
+</head>
+<body>
+  <div class="loginbox">
+  <img src="./download.png" class="user">
+  <h2>Entertainment Registration Form</h2>
+   <form>
+    <p>User name:</p>
+    <input type="text" name="" placeholder=" type User name">
+    <p>date of birth</p>
+    <input  class="date" type="date" name="date">
+    <p>Type of entertainment:</p> 
+    <select class="select"> 
+      <option >Sport</option>
+      <option >Field trips</option>
+      <option >films entertainment</option>
+      <option > shoping entertainment</option>
+      <option >othere entertainment</option>
+    </select>
+    <p>Phone number:</p>
+    <input class="number" type="number" name="number " placeholder="07xxxxxxxx">
+    <input type="submit" name="" value="sign up">
+    <a href="">forget password</a>
+   </form>
+
+  </div>  
+    
+</body>
+</html>
